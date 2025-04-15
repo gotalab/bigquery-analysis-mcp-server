@@ -1,4 +1,5 @@
 # BigQuery Analysis MCP Server
+[![smithery badge](https://smithery.ai/badge/@gotalab/bigquery-analysis-mcp-server)](https://smithery.ai/server/@gotalab/bigquery-analysis-mcp-server)
 
 ## Overview
 This server is an MCP server for executing SQL queries against Google BigQuery, providing the following features:
@@ -55,6 +56,14 @@ Windows: `%APPDATA%/Claude/claude_desktop_config.json`
     }
   }
 }
+```
+
+### Installing via Smithery
+
+To install BigQuery Analysis Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@gotalab/bigquery-analysis-mcp-server):
+
+```bash
+npx -y @smithery/cli install @gotalab/bigquery-analysis-mcp-server --client claude
 ```
 
 ### Debugging

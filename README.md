@@ -22,22 +22,28 @@ This server is an MCP server for executing SQL queries against Google BigQuery, 
 ## Development
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js 22.23.4+, 24.22.1+, or 26.12.1+ (use the latest patch of a supported release line)
+- pnpm 12.4.2 (pinned in `package.json`)
 - Google Cloud authentication setup (gcloud CLI or service account)
 
 ### Install Dependencies
 ```bash
-npm install
+pnpm install --frozen-lockfile
+```
+
+### Test
+```bash
+pnpm test
 ```
 
 ### Build
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Development Mode (Auto-rebuild)
 ```bash
-npm run watch
+pnpm run watch
 ```
 
 ## Installation
@@ -62,7 +68,7 @@ Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 Since MCP servers communicate over stdio, debugging can be challenging. We recommend using the [MCP Inspector](https://github.com/modelcontextprotocol/inspector):
 
 ```bash
-npm run inspector
+pnpm run inspector
 ```
 
 The Inspector will provide a URL to access debugging tools in your browser.
@@ -122,22 +128,28 @@ BigQueryでSQLクエリを実行するためのMCPサーバーです。クエリ
 ## 開発方法
 
 ### 前提条件
-- Node.js（v16以上）
+- Node.js 22.23.4以上、24.22.1以上、または26.12.1以上（サポート中の系列の最新パッチを使用）
+- pnpm 12.4.2（`package.json`で固定）
 - Google Cloud認証設定（gcloud CLIまたはサービスアカウント）
 
 ### 依存関係のインストール
 ```bash
-npm install
+pnpm install --frozen-lockfile
+```
+
+### テスト
+```bash
+pnpm test
 ```
 
 ### ビルド
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### 開発モード（自動再ビルド）
 ```bash
-npm run watch
+pnpm run watch
 ```
 
 ## インストール
@@ -163,7 +175,7 @@ Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 MCPサーバーは標準入出力（stdio）を介して通信するため、デバッグが難しい場合があります。[MCP Inspector](https://github.com/modelcontextprotocol/inspector)の使用をお勧めします：
 
 ```bash
-npm run inspector
+pnpm run inspector
 ```
 
 InspectorはブラウザでデバッグツールにアクセスするためのURLを提供します。
